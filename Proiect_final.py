@@ -150,8 +150,12 @@ def game_over():
 
 def you_won():
     pencolor('#eb5778')
-    write('Thank you so much! You helped me overcome my sadness! You are my best friend!')
-    Screen.clear()
+    screen.bgpic("background2.png")
+    up()
+    setpos(-370, -330)
+    down()
+    write('Thank you so much!\nYou helped me overcome my sadness!\n You are my best friend!')
+    screen.clear()
     screen.bgpic("you_won.png")
     exit()
 
@@ -167,7 +171,6 @@ def story():
         one= write (storyline[i],align='left', font=("Helvetica", 20, 'normal'))
         ontimer(undo(), t=2000)
         
-
 
 def Stats_Draw():
     #Prep for box
