@@ -166,7 +166,7 @@ def story():
             pencolor("#188312")
     
         one= write (storyline[i],align='left', font=("Helvetica", 20, 'normal'))
-        ontimer(undo(), t=2000)
+        ontimer(undo(), t=6000)
         
 
 def Stats_Draw():
@@ -218,7 +218,7 @@ for i in range(10):
             setpos(-370, -350)
             down()
         one= write (dialogue[i],align='left', font=("Helvetica", 20, 'normal'))
-        ontimer(undo(), t=2000)
+        ontimer(undo(), t=6000)
         if i%2==1:
             nos = screen.textinput("Yes or No?", "Enter your choice: ")
             if i==1 or i==5 or i==7: 
