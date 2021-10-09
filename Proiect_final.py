@@ -143,8 +143,6 @@ def Drain_Health():
     end_fill()
 
 def game_over():
-    SadLayla()
-    screen.clear()
     screen.bgpic("game_over.png")
     exit()
 
@@ -155,7 +153,7 @@ def you_won():
     setpos(-370, -330)
     down()
     write('Thank you so much!\nYou helped me overcome my sadness!\n You are my best friend!')
-    screen.clear()
+    clear()
     screen.bgpic("you_won.png")
     exit()
 
@@ -239,6 +237,7 @@ for i in range(10):
             Drain_Health()
             health_x += sqr_len+3
             d=0
+clear()
 if health_x==355:
     game_over()
 else:
