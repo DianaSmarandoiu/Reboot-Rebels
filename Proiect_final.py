@@ -143,6 +143,10 @@ def Drain_Health():
     end_fill()
 
 def game_over():
+    up()
+    setpos(-370, -330)
+    down()
+    write('You lost!')
     exit()
 
 def you_won():
@@ -152,7 +156,6 @@ def you_won():
     setpos(-370, -330)
     down()
     write('Thank you so much!\nYou helped me overcome my sadness!\n You are my best friend!')
-    clear()
     screen.bgpic("you_won.png")
     exit()
 
